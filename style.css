@@ -363,9 +363,11 @@ article .icon {
 #projects {
     position: relative;
     margin-top: 12rem;
-    margin-bottom: 5rem;
+    margin-bottom: 40rem;
 }
-
+.project-title{
+    margin-bottom: 2rem;
+}
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
@@ -390,7 +392,7 @@ article .icon {
     margin-bottom: 1rem;
 }
 
-.project-title {
+.projects-title {
     margin: 1rem 0;
     color: black;
 }
@@ -407,6 +409,69 @@ article .icon {
 }
 
 
+/* PURPOSE SECTION */
+
+#purpose {
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.text-container {
+    margin-bottom: 2rem; /* Add space between paragraph and first container */
+}
+
+.purpose-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Gap between items */
+}
+
+.color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem; /* Add space below each container */
+}
+
+.purpose-img {
+    border-radius: 2rem;
+    max-width:300px; /* Ensure the image takes full width of its container */
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+}
+
+.purpose-title {
+    margin: 1rem 0;
+    color: black;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
 /* CONTACT */
 
 #contact {
@@ -414,7 +479,7 @@ article .icon {
     justify-content: center;
     flex-direction: column;
     height: 70vh;
-    margin-top: 29rem;
+    margin-top: 50rem;
   }
   
 .contact-info-upper-container {
