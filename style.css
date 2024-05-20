@@ -200,6 +200,12 @@ section {
     gap: 1rem;
 }
 
+/* ICONS  CONTAINER*/
+
+#socials-container {
+    display: flex;
+    gap: 60px; 
+}
 
 /* ICONS */
 
@@ -315,6 +321,7 @@ section {
 
 #experience {
     position: relative;
+    margin-bottom: 12rem;
   }
   
 .experience-sub-title {
@@ -355,33 +362,100 @@ article .icon {
 
 #projects {
     position: relative;
-  }
-  
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 1.5rem; /* Gap between items */
+}
+
 .color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
-  }
-  
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .project-img {
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
-
-.project-img img {
-    width: 100%; /* Make images take up the full width of the grid column */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Ensure the image takes full width of its container */
+    height: auto;
+    margin-bottom: 1rem;
 }
-  
+
 .project-title {
-    margin: 1rem;
+    margin: 1rem 0;
     color: black;
-  }
-  
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
+}
+
+
+/* CONTACT */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    margin-top: 29rem;
   }
+  
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+  }
+  
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+  
+.contact-info-container p {
+    font-size: larger;
+  }
+  
+.contact-icon {
+    cursor: default;
+  }
+  
+.email-icon {
+    height: 2.5rem;
+  }
+  
+/* FOOTER SECTION */
+  
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+  }
+  
+footer p {
+    text-align: center;
+  }
+  
