@@ -350,6 +350,7 @@ article .icon {
     cursor: default;
   }
 
+
 /* PROJECTS SECTION */
 
 #projects {
@@ -363,9 +364,17 @@ article .icon {
   
 .project-img {
     border-radius: 2rem;
-    width: 50px;
-    height: 50px;
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
   }
+
+.project-img img {
+    width: 100%; /* Make images take up the full width of the grid column */
+    height: auto; /* Maintain aspect ratio */
+}
   
 .project-title {
     margin: 1rem;
